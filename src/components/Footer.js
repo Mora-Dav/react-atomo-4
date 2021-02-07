@@ -3,11 +3,13 @@ import FooterLinks from './FooterLinks';
 
 function Footer () {
     return (
-        <div>
-            <FooterLinks />
-            <FooterLinks />
-            <FooterLinks />
-        </div>
+        <footer>
+            <div>
+                <FooterLinks />
+                <FooterLinks />
+                <FooterLinks />
+            </div>
+        </footer>
     )
 }
 

@@ -1,14 +1,23 @@
 import React from 'react';
-import articulo from '../data/articulo'
-
+let titulo = 'Mi primer sitio con React JS';
+let parrafo = require('../data/articulo.js').texto;
+let image = 'https://placeimg.com/500/240/nature';
 
 function Content() {
     return (
-        <>
-        <h1>Mi primer sitio con React JS</h1>
-        <p><articulo /></p>
-        <img src='https://placeimg.com/500/240/nature' alt='paisaje'></img>
-        </>
+        <div>
+            <div>
+                <h1>{titulo} </h1>
+            </div>
+            <div>
+                <p>
+                    {parrafo}
+                </p>
+            </div>
+            <div>
+                <img src= {image} alt='paisaje'></img>
+            </div>
+        </div>
     )
 }
 
